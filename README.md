@@ -3,9 +3,9 @@
 A physics-based, from-scratch study of whether a small wind turbine makes sense in Modena
 (Po Valley). Built in Python, runs free in Google Colab — no installation.
 
-[![Open notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreapiciuolo-dot/windpower-modena/blob/main/notebooks/01_wind_resource_and_energy.ipynb) — wind resource & energy
+[![Open notebook 1 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreapiciuolo-dot/windpower-modena/blob/main/notebooks/01_wind_resource_and_energy.ipynb) &nbsp; wind resource & energy
 
-[![Open notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreapiciuolo-dot/windpower-modena/blob/main/notebooks/02_blade_design_and_optimisation.ipynb) — blade design & optimisation
+[![Open notebook 2 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/andreapiciuolo-dot/windpower-modena/blob/main/notebooks/02_blade_design_and_optimisation.ipynb) &nbsp; blade design & optimisation
 
 **Headline result:** Modena is a weak-wind site (~2 m/s at 10 m). Even an optimally sized turbine
 within residential limits (4 m rotor, 24 m tower) would produce only ~**793 kWh/year** (~29% of a
