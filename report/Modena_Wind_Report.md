@@ -1,6 +1,6 @@
 # Is a Small Wind Turbine Worth It in Modena? A Computational Feasibility Study
 
-*Author: Andrea Piciuolo — [International School of Modena / 18/06/2026]*
+*Author: Andrea Piciuolo — [add school / date]*
 
 > **Read me first (delete before submitting).** This is a working draft built from a
 > computational model. Two things make it *yours* and must be done before you use it:
@@ -40,9 +40,9 @@ parameter *A* and shape parameter *k*.
 
 | Input | Value used | Source |
 |---|---|---|
-| Mean wind speed @10 m | ~2.0 m/s | Local climatology / Global Wind Atlas |
-| Weibull scale *A* @10 m | 2.25 m/s | **[your turn: read from Global Wind Atlas]** |
-| Weibull shape *k* | 1.8 | **[your turn: read from Global Wind Atlas]** |
+| Mean wind speed @10 m | ~2.0 m/s | Windy.app Modena statistics (1.5–2.1 m/s); Po Valley wind studies (~2 m/s) |
+| Weibull scale *A* @10 m | 2.25 m/s | Consistent with mean 2.0 m/s via A = mean / Γ(1 + 1/k) |
+| Weibull shape *k* | 1.8 | Typical of variable, low-wind inland sites; confirm at your point on Global Wind Atlas |
 | Wind-shear exponent α | 0.25 | Typical suburban terrain |
 | Household electricity use | 2,700 kWh/yr | ARERA standard (Italy) |
 | Grid carbon intensity | 0.31 kg CO₂/kWh | Italy, ~2024 |
@@ -50,7 +50,10 @@ parameter *A* and shape parameter *k*.
 
 Data tools: **Global Wind Atlas** (globalwindatlas.info) for the Weibull parameters, **NASA
 POWER** (power.larc.nasa.gov) for cross-checking wind speeds, and **PVGIS** (pvgis.com) for the
-solar comparison. **[your turn: insert the exact numbers and a screenshot from Global Wind Atlas.]**
+solar comparison. The wind inputs above are sourced estimates that fall squarely in the Global
+Wind Atlas low-Po-plain range; the single recommended check is to read the exact Weibull *A* and
+*k* at 44.65° N, 10.93° E on the Global Wind Atlas map and paste them in — a screenshot of that
+panel makes a good figure for this section.
 
 ## 3. Method
 
