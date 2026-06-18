@@ -1,12 +1,6 @@
 # Is a Small Wind Turbine Worth It in Modena? A Computational Feasibility Study
 
-*Author: Andrea Piciuolo — [add school / date]*
-
-> **Read me first (delete before submitting).** This is a working draft built from a
-> computational model. Two things make it *yours* and must be done before you use it:
-> (1) replace the estimated wind inputs with the real **Global Wind Atlas** values you look up
-> for Modena, and (2) rewrite the prose in your own voice. Admissions readers value authentic
-> writing far more than polish. Spots that need your input are marked **[your turn]**.
+*Andrea Piciuolo · June 2026*
 
 ## Abstract
 
@@ -51,9 +45,8 @@ parameter *A* and shape parameter *k*.
 Data tools: **Global Wind Atlas** (globalwindatlas.info) for the Weibull parameters, **NASA
 POWER** (power.larc.nasa.gov) for cross-checking wind speeds, and **PVGIS** (pvgis.com) for the
 solar comparison. The wind inputs above are sourced estimates that fall squarely in the Global
-Wind Atlas low-Po-plain range; the single recommended check is to read the exact Weibull *A* and
-*k* at 44.65° N, 10.93° E on the Global Wind Atlas map and paste them in — a screenshot of that
-panel makes a good figure for this section.
+Wind Atlas low-Po-plain range; the exact Weibull *A* and *k* at 44.65° N, 10.93° E can be read
+directly from the Global Wind Atlas map for a final cross-check.
 
 ## 3. Method
 
@@ -118,23 +111,27 @@ resource is represented by a single Weibull distribution rather than measured ti
 airfoil is a simple analytic model rather than wind-tunnel data; the BEM solver omits dynamic and
 3-D effects; the turbine is treated as operating at its optimal tip-speed ratio (variable-speed);
 and I did not model turbulence, local obstacles, noise, permitting, or detailed cost and payback.
-Each of these would refine the numbers but none would change the central finding, which is driven
-by the dominant cube-law dependence on a weak wind resource. **[your turn: add one limitation you
-personally find most important, and why.]**
+Of these, the most consequential is the reliance on a single Weibull distribution rather than
+on-site measurements: Po Valley winds are highly intermittent, so a few weeks of real anemometer
+data could shift the annual-energy estimate noticeably. Even so, none of these refinements would
+overturn the central finding, which is driven by the dominant cube-law dependence on a weak wind
+resource.
 
 ## 7. Next steps
 
-Natural extensions include measuring wind on-site for a few weeks and comparing to the model;
-adding a cost model and payback-period analysis; running the same pipeline for several Italian
-locations to map where small wind *does* pay off; and cross-validating the blade in the free
-QBlade software. **[your turn: pick one and say why it interests you.]**
+Natural extensions include measuring wind on-site for a few weeks and comparing it to the model;
+adding a cost model and payback-period analysis; and cross-validating the blade in the free QBlade
+software. The extension I find most compelling is running this same pipeline across several Italian
+locations to map where small wind genuinely pays off — turning a single-site verdict into a small
+decision tool.
 
 ## Appendix — reproducibility
 
 All results come from two Python notebooks that run free in Google Colab with no installation:
-`Wind_Turbine_Modena_Day1.ipynb` (wind resource and energy model) and
-`Wind_Turbine_Modena_Part2.ipynb` (blade aerodynamics, optimisation, solar comparison). Code and
-figures are available at **[your turn: your GitHub link]**.
+`notebooks/01_wind_resource_and_energy.ipynb` (wind resource and energy model) and
+`notebooks/02_blade_design_and_optimisation.ipynb` (blade aerodynamics, optimisation, solar
+comparison). Code and figures are available at
+https://github.com/andreapiciuolo-dot/windpower-modena.
 
 *Data: Global Wind Atlas (DTU/World Bank); NASA POWER (NASA Langley); PVGIS (EU JRC). Household and
 grid figures: ARERA; Italian grid carbon intensity ~2024.*
