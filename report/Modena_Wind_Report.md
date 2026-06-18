@@ -1,6 +1,6 @@
 # Is a Small Wind Turbine Worth It in Modena? A Computational Feasibility Study
 
-*Author: Andrea Piciuolo — [add school / date]*
+*Author: Andrea Piciuolo — [International School of Modena / 18/06/2026]*
 
 > **Read me first (delete before submitting).** This is a working draft built from a
 > computational model. Two things make it *yours* and must be done before you use it:
