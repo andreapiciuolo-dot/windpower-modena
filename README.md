@@ -68,7 +68,7 @@ wind distribution over 8,760 hours.
 
 A model, not a field measurement: single Weibull resource, simplified analytic airfoil, no
 turbulence, siting, or cost modelling, and an assumed variable-speed (optimal tip-speed-ratio)
-operation. These refine the numbers but not the central, resource-driven conclusion. See the
+operation. These refine the numbers but not the most important resource-driven conclusion. See the
 [full report](report/Modena_Wind_Turbine_Report.pdf) for the complete discussion.
 
 ## License
