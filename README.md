@@ -17,7 +17,7 @@ value of the project is reaching that conclusion with evidence.
 
 The complete write-up, with all the figures explained in order, is here:
 [**report/Modena_Wind_Turbine_Report.pdf**](report/Modena_Wind_Turbine_Report.pdf) (opens in
-GitHub's PDF viewer). An editable Word version sits next to it in the `report/` folder.
+GitHub's PDF viewer). An editable Word version is availibe next to it in the `report/` folder.
 
 ## What's inside
 
